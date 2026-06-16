@@ -4,7 +4,6 @@
 **Vulnerability:** Blind SSRF — IPv6 Filter Bypass  
 **Severity:** High  
 **Status:** Closed as Duplicate  
-**Author:** [0xkarim](https://github.com/zyad-sec)
 
 ---
 
@@ -162,5 +161,3 @@ The URL validation is string-based and applied only at registration time. It che
 The program closed this as a duplicate, citing proxy-level controls that block delivery at the network layer. That may mitigate the impact in production — but the filter bypass at the API layer is still a real finding, and the OOB confirmation proves the delivery pipeline reaches outside the sandbox environment. Worth understanding the full chain rather than relying solely on network-layer controls.
 
 ---
-
-*Part of my ongoing bug bounty work. More writeups at [0xkarim](https://github.com/zyad-sec).*
